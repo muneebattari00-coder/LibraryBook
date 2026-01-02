@@ -1,0 +1,142 @@
+
+/* import font from website */
+@font-face{
+    font-family: yewala;
+    src: url(NotoNastaliqUrdu-VariableFont_wght.ttf);
+}
+
+/* to save time time and change any valur (root) */
+:root{
+    --pramarycolor: blue;
+}
+
+/* *{} is universal selector apply on all page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* select two diff tags
+ and comma */
+ html, body {
+    height: 100%;
+}
+
+/* this (.classname) is use for class editing */
+.container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* this (#idname) is use for id editing */
+#header{
+    background-color: var(--pramarycolor);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+#navbar{
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+#navbar ul{
+    list-style-type: none;
+}
+
+/* upper jo root use hua us ki example, hm bd mn uper root meinn change color kry gy to idr sy auto ho jy ga */
+#navbar ul .active{
+    background-color: var(--pramarycolor);
+}
+#navbar ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+/* (:hover)use hota h jb cursor udr ly k jy to */
+#navbar ul li:hover{
+    background-color: var(--pramarycolor);
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#main{
+    margin: 0 40px;
+    padding: 10px 0;
+    flex-grow: 1;
+}
+#main h2{
+    color: var(--pramarycolor);
+}
+
+#aslp {
+    margin-top: 30px ;
+    
+}
+
+#aslp a{
+    outline: 5px solid blue;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: green;
+    display: inline;
+    
+    
+}
+.fatawa a{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 16px;
+    padding-top: 5px;
+    border-radius: 5px;
+    outline: 5px solid purple;
+    margin: 50px 50px;
+    font-family: yewala;
+
+}
+
+/* .fatawa :hover{
+    box-shadow: inset;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 16px;
+    padding-top: 5px;
+    border-radius:5px;
+    outline: 5px solid blue;
+    margin: 50px 50px;
+
+} */
+#footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+#fold a{
+    
+    margin: 25px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    background-color:  lawngreen;
+    padding: 16px;
+    padding-top: 5px;
+    border-radius: 5px;
+    outline: 5px solid crimson;
+    font-family: yewala;
+
+}
+
